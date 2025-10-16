@@ -1,6 +1,6 @@
 # Tareas previas
  Crear el environment (API key + endpoint)
- Front-end: html+css & React
+ Front-end: React+Vite
  Back-end: .NET C# + Azure
  
 
