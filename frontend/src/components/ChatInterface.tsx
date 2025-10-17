@@ -49,6 +49,7 @@ export default function ChatInterface() {
     setInput("")
     setIsTyping(true)
 
+    console.log("Sending to backend:", input);
     try {
       const response = await fetch('http://localhost:3000/ask', {
         method: 'POST',
@@ -56,11 +57,11 @@ export default function ChatInterface() {
         body: JSON.stringify({ question: input }) // Adjust payload as needed for your backend
       });
       const data = await response.json();
-      console.log(data)
+
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: data?.response || JSON.stringify(data), // Adjust property based on backend response
+        content: data?.answer || JSON.stringify(data), // Adjust property based on backend response
         timestamp: new Date(),
       }
       setMessages((prev) => [...prev, assistantMessage])

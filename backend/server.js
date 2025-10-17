@@ -1,11 +1,12 @@
 import { AzureChatOpenAI } from "@langchain/openai";
 import dotenv from "dotenv";
 import express from "express";
+import cors from "cors";
 
 dotenv.config();
 
 const llm = new AzureChatOpenAI({
-  model: "gpt-4o",
+  model: "gpt-4o-mini",
   temperature: 0,
   maxTokens: undefined,
   maxRetries: 2,
@@ -15,9 +16,9 @@ const llm = new AzureChatOpenAI({
   azureOpenAIApiVersion: process.env.AZURE_OPENAI_API_VERSION, // In Node.js defaults to process.env.AZURE_OPENAI_API_VERSION
 });
 
-
 const app = express();
 
+app.use(cors());    
 
 app.post("/ask", express.json(), async (req, res) => {
   const { question } = req.body;
@@ -30,7 +31,6 @@ app.post("/ask", express.json(), async (req, res) => {
     ["human", question],
   ]);
     res.json({ answer: aiMsg.content});
-  console.log({ aiMsg });
 });
 
 app.listen(3000, () => {
