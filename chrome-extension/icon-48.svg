@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded rectangle background -->
+  <rect width="48" height="48" rx="9.600000000000001" ry="9.600000000000001" fill="url(#grad)"/>
+
+  <!-- Chat bubble -->
+  <path d="M 13.440000000000001 7.199999999999999
+           L 34.56 7.199999999999999
+           Q 38.4 7.199999999999999 38.4 11.04
+           L 38.4 20.639999999999997
+           Q 38.4 24.479999999999997 34.56 24.479999999999997
+           L 18.240000000000002 24.479999999999997
+           L 13.920000000000002 31.679999999999996
+           L 16.8 24.479999999999997
+           L 13.440000000000001 24.479999999999997
+           Q 9.600000000000001 24.479999999999997 9.600000000000001 20.639999999999997
+           L 9.600000000000001 11.04
+           Q 9.600000000000001 7.199999999999999 13.440000000000001 7.199999999999999
+           Z"
+        fill="none" stroke="white" stroke-width="2.88"
+        stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

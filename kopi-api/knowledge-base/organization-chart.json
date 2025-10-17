@@ -1,0 +1,55 @@
+{
+  "title": "Kopius Organization Chart",
+  "lastUpdated": "2025-10-17",
+  "structure": {
+    "ceo": {
+      "title": "CEO",
+      "subtitle": "Executive Officer",
+      "name": "Jim Darrin",
+      "reports": [
+        {
+          "title": "CRO",
+          "subtitle": "Revenue & Growth",
+          "name": "Ian Au-Yeung",
+          "responsibilities": "Focused on driving commercial opportunities, sales strategies, and expanding the company's market presence."
+        },
+        {
+          "title": "CPO",
+          "subtitle": "People & Talent",
+          "name": "Malena Garilli",
+          "responsibilities": "Ensures employee experience, recruiting, engagement and retention align with Kopius values and growth."
+        },
+        {
+          "title": "CFO",
+          "subtitle": "Financial Control",
+          "name": "Justin Lohn",
+          "responsibilities": "Oversees Financial Control. Manages budgets, forecasts, and financial health to support sustainable growth."
+        },
+        {
+          "title": "VP of Operations",
+          "subtitle": "Operations",
+          "name": "Renee Christensen",
+          "responsibilities": "Coordinates internal processes, resource planning, and cross-functional execution to keep the business running efficiently."
+        },
+        {
+          "title": "Global Head of Innovation",
+          "subtitle": "Delivery & Solutions",
+          "name": "Diego Anfossi",
+          "responsibilities": "Ensures successful execution of IT projects, service quality, and delivery excellence."
+        },
+        {
+          "title": "EVP, Alliances",
+          "subtitle": "Microsoft Partner Channel",
+          "name": "Justin Cloutier",
+          "responsibilities": "Builds and strengthens strategic partnerships, especially with Microsoft. Ensures alignment with partner programs and tech ecosystem."
+        },
+        {
+          "title": "EVP, LatAm President",
+          "subtitle": "Latin America",
+          "name": "Matias Mazzucchelli",
+          "responsibilities": "Provides executive leadership, strategic vision. Ensures alignment across all business units."
+        }
+      ]
+    }
+  }
+}

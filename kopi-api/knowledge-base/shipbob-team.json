@@ -1,0 +1,139 @@
+{
+  "title": "ShipBob Team Members",
+  "client": "ShipBob",
+  "lastUpdated": "2025-10-17",
+  "description": "List of Kopius team members working on the ShipBob client project",
+  "members": [
+    {
+      "name": "Agustin Vazquez",
+      "role": "DevOps en Shipbob",
+      "status": "active"
+    },
+    {
+      "name": "Ale Martinez",
+      "status": "active"
+    },
+    {
+      "name": "Alejandro Alonso",
+      "status": "active"
+    },
+    {
+      "name": "Alejandro Miranda",
+      "role": "Staff Software Engineer @ ShipBob",
+      "status": "active"
+    },
+    {
+      "name": "Alexandre Arroyo",
+      "status": "active"
+    },
+    {
+      "name": "Brian Roman",
+      "status": "active"
+    },
+    {
+      "name": "Carlos Cervio",
+      "status": "active"
+    },
+    {
+      "name": "Christian Marinelli",
+      "status": "active"
+    },
+    {
+      "name": "Diego Introini",
+      "status": "active"
+    },
+    {
+      "name": "Diego Silvera de Souza",
+      "role": "FullStack Developer",
+      "status": "active"
+    },
+    {
+      "name": "Ezequiel Basso",
+      "status": "active"
+    },
+    {
+      "name": "Fabio Zanardi",
+      "status": "active"
+    },
+    {
+      "name": "Germán Persello",
+      "status": "active"
+    },
+    {
+      "name": "Gonzalo Stete",
+      "role": "IT Analyst",
+      "status": "active"
+    },
+    {
+      "name": "Ivan Inturti",
+      "status": "active"
+    },
+    {
+      "name": "Ivan Klemba",
+      "status": "active"
+    },
+    {
+      "name": "Jose Silva",
+      "status": "active"
+    },
+    {
+      "name": "Juan Marianacci",
+      "status": "active"
+    },
+    {
+      "name": "Juan Mincucci",
+      "status": "active"
+    },
+    {
+      "name": "Kevin Lannes",
+      "status": "active"
+    },
+    {
+      "name": "Luciano Yabra",
+      "status": "active"
+    },
+    {
+      "name": "Luis Acevedo",
+      "status": "active"
+    },
+    {
+      "name": "Malena",
+      "status": "active"
+    },
+    {
+      "name": "Manu Ibarra",
+      "status": "active"
+    },
+    {
+      "name": "Mario San. (MariusSan)",
+      "status": "active"
+    },
+    {
+      "name": "Mery - HR Kopius",
+      "role": "HR",
+      "status": "active"
+    },
+    {
+      "name": "Miguel Merlino",
+      "status": "active"
+    },
+    {
+      "name": "Nicolas Vega",
+      "status": "active"
+    },
+    {
+      "name": "Sebastian Guerrero",
+      "status": "active"
+    },
+    {
+      "name": "Veronica",
+      "status": "active"
+    },
+    {
+      "name": "Yaniel Blanco",
+      "status": "active"
+    }
+  ],
+  "totalMembers": 31,
+  "slackChannel": "team-shipbob"
+}

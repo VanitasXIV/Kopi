@@ -1,0 +1,9 @@
+{
+  "name": "chatbot-extension-icons",
+  "version": "1.0.0",
+  "description": "Generate icons for chatbot extension",
+  "private": true,
+  "dependencies": {
+    "canvas": "^3.2.0"
+  }
+}
