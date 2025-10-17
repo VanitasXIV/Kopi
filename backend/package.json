@@ -11,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@langchain/community": "^0.3.57",
     "@langchain/core": "^0.3.78",
     "@langchain/openai": "^0.6.16",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "faiss-node": "^0.5.1",
+    "pdf-parse": "^1.1.1"
   }
 }
