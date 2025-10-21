@@ -1,22 +1,21 @@
 // Configuration for the chatbot API
 const CHATBOT_CONFIG = {
-  // API endpoint - update this to match your actual endpoint
-  apiUrl: 'http://localhost:5173/api/chat',
+  // API endpoint - connected to the backend server on port 3000
+  apiUrl: 'http://localhost:3000/ask',
 
-  // Request format - customize based on your API requirements
+  // Request format - matches the /ask endpoint format
   formatRequest: (message) => ({
-    message: message,
-    timestamp: new Date().toISOString()
+    question: message
   }),
 
-  // Response parser - customize based on your API response format
+  // Response parser - extracts the answer from the API response
   parseResponse: (data) => {
-    // Try common response field names
-    return data.response || data.message || data.reply || data.text || data.answer;
+    // The API returns { answer: "response text" }
+    return data.answer || data.response || data.message || data.reply || data.text;
   },
 
   // Error message
-  errorMessage: 'Sorry, I\'m having trouble connecting to the AI service. Please make sure the server is running.',
+  errorMessage: 'Sorry, I\'m having trouble connecting to the AI service. Please make sure the server is running on port 3000.',
 
   // Optional: Headers to include in the request
   headers: {

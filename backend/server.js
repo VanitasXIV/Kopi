@@ -54,20 +54,22 @@ const createRAGChain = async () => {
     console.log("Creating vector store from all documents...");
     // 👇 CORRECTED: Using MemoryVectorStore as imported
     const vectorStore = await MemoryVectorStore.fromDocuments(splitDocs, embeddings);
-    const retriever = vectorStore.asRetriever();
+    const retriever = vectorStore.asRetriever({
+        k: 8  // Retrieve top 8 most relevant chunks instead of default 4
+    });
 
     // 5. Create the prompt template
     const prompt = ChatPromptTemplate.fromTemplate(`
-    You are a helpful assistant for Kopius employees. 
+    You are a helpful assistant for Kopius employees.
     Answer the following question based only on the provided context.
-    If you don't know the answer, just say that you don't know in a kind and corporative way.
-    In case you need to provide an answer, make sure to do so in Spanish.
-    The answer should be concise and to the point, but thankful with the final user.
+    If you don't know the answer, just say that you don't know in a kind and corporate way.
+    Answer in the same language as the question. If the question is in English, answer in English. If the question is in Spanish, answer in Spanish.
+    The answer should be concise and to the point, but friendly with the user.
     The answer should also include relevant emojis to make it more engaging.
     If you know the answer, and it is not related to a greeting, do not greet them and just give a reply.
-    When you answer, try to don't repeat the emojis used in the question
-    If the final user asks for a joke, make sure to provide a funny and light-hearted one.
-    If the final user says goodbye, respond with a friendly farewell message, emojis, and remember to mention the name of the people team "Team 3 Kopius 2025".
+    When you answer, try to not repeat the emojis used in the question.
+    If the user asks for a joke, make sure to provide a funny and light-hearted one.
+    If the user says goodbye, respond with a friendly farewell message, emojis, and remember to mention the name of the people team "Team 3 Kopius 2025".
 
     Context:
     {context}
@@ -104,6 +106,10 @@ const startServer = async () => {
 
     const app = express();
     app.use(cors());
+
+    app.get("/", (req, res) => {
+        res.json({ status: "Server is running", message: "Use POST /ask to ask questions" });
+    });
 
     app.post("/ask", express.json(), async (req, res) => {
         const { question } = req.body;
