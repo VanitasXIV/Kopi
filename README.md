@@ -1,3 +1,7 @@
+# Kopius Hackathon 2025
+
+![Kopius Winners](./winners.jpeg)
+
 # Tareas previas
  Crear el environment (API key + endpoint)
  Front-end: React+Vite
